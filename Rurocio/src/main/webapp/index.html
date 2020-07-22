@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:8080/ -->
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous"
+            />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+            />
+        <link rel="icon" href="./img/icon/rsheeticon.png"/>
+        <title>Rurocio</title>
+        <link rel="stylesheet" type="text/css" href="./css/mystyle.css">
+        <script>
+            window.onload = function callServlet() {
+                document.location.href = "SearchPopularEventsServlet";
+                return;
+            }
+        </script>
+    </head>
+
+    <body>
+        <div id="app">
+            <div id="header">
+                <header id="myTopnav" class="topnav">
+                    <div class="inner">
+                        <div class="logo">
+                            <h1>
+                                <a href="SearchPopularEventsServlet">
+                                    Rur<span>ocio</span></a
+                                >
+                            </h1>
+                        </div>
+                        <div id="myNavbar" class="navbar">
+                            <ul>
+                                <li>
+                                    <a
+                                        href="SobreNosotros.html"
+                                        class="navbar-element"
+                                        >Sobre nosotros</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="Login.jsp"
+                                        class="navbar-element"
+                                        >
+                                        Iniciar sesion
+                                    </a>
+                                </li>
+                                <li>
+                                    <a c-on:click="myResponsive()" class="icon"
+                                       ><i class="fa fa-bars"></i
+                                        ></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </header>
+            </div>
+            <div id="search" class="first-section">
+                <div class="section-title">
+                    <h1>Encuentra tu plan perfecto</h1>
+                </div>
+                <form action="SearchEventsServlet" method="get">
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="inputEventName">Nombre del evento</label
+                            ><input
+                                type="text"
+                                name="eventName"
+                                class="form-control"
+                                value=""
+                                />
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputEventType">Tipo de evento</label>
+                            <select name="eventType" class="form-control">
+                                <option selected="selected">Cualquier tipo</option
+                                ><option>Gastronomico</option
+                                ><option>Musical</option
+                                ><option>Deportivo</option
+                                ><option>Infantil</option
+                                ><option>Cultural</option
+                                ><option>Festivo</option></select
+                            >
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputEventRadius"
+                                   >Distancia máx (Km)</label
+                            ><input
+                                type="number"
+                                name="eventRadius"
+                                min="1"
+                                class="form-control"
+                                />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="inputEventDateStart"
+                                   >Fecha de inicio</label
+                            ><input
+                                type="date"
+                                name="eventDateStart"
+                                class="form-control"
+                                />
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputEventDateEnd">Fecha de fin</label
+                            ><input
+                                type="date"
+                                name="eventDateEnd"
+                                class="form-control"
+                                />
+                        </div>
+                        <div class="form-group col-md-2"></div>
+                        <div class="form-group col-md-2">
+                            <br /><button type="submit" class="btn btn-primary">
+                                Buscar
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <!---->
+            </div>
+            <div id="nearby-events" class="section">
+                <div class="section-title"><h1>Eventos cercanos</h1></div>
+                <div class="maps">
+                        <img src="./img/other/eventos_cercanos_recortado.png" />
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

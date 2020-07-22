@@ -1,0 +1,816 @@
+body {
+    margin: 0 !important;
+}
+
+/* SEARCH */
+#search {
+    background-image: linear-gradient(
+            rgba(31, 31, 31, 0.5),
+            rgba(31, 31, 31, 0.5)
+        ),
+        url(../img/background/party.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#search .section-title {
+    color: white;
+}
+#search label {
+    color: white;
+}
+#search form {
+    padding-bottom: 50px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin: 0 auto;
+}
+#search p {
+    font-size: 24px;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#new-serach select {
+    color: black;
+    font-size: 20px;
+}
+#search input {
+    font-size: 20px;
+    color: black;
+}
+#results {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+/* NEARBY EVENTS */
+#nearby-events {
+    background: rgb(248, 248, 248);
+}
+#nearby-events .section-title {
+    color: rgb(84, 114, 50);
+}
+#nearby-events .maps {
+    margin: 0 auto;
+}
+#nearby-events .maps img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+}
+
+/* POPULAR EVENTS */
+#popular-events {
+    background: rgb(255, 254, 241);
+}
+#popular-events .section-title {
+    color: rgb(84, 114, 50);
+}
+#popular-events .images img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+}
+
+/* TOPNAV */
+.topnav {
+    z-index: 1000;
+    margin-top: 0px;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background: rgb(90, 122, 53);
+    background: transparent;
+    background: rgb(0, 0, 0);
+    overflow: hidden;
+}
+.topnav .inner * {
+    color: white;
+}
+.topnav .inner {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+.topnav .logo {
+    height: 100%;
+    display: table;
+    float: left;
+}
+.topnav .logo h1 {
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: "";
+    font-size: 72px;
+    font-weight: 200;
+    color: rgb(230, 225, 164);
+}
+.topnav .logo span {
+    color: rgb(152, 216, 79);
+    font-weight: 600;
+}
+.navbar {
+    padding-top: 40px;
+    display: table;
+    float: right;
+    height: 100%;
+}
+.navbar ul li {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    display: table;
+    float: left;
+    font-size: 20px;
+    padding: 0px 20px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.navbar ul li :hover {
+    color: rgb(255, 187, 0);
+}
+.icon {
+    display: none;
+}
+@media screen and (max-width: 1200px) {
+    .navbar-element {
+        display: none;
+    }
+    .navbar ul li {
+        float: right;
+        padding: 0px;
+    }
+    .icon {
+        display: block;
+        float: right;
+    }
+}
+@media screen and (max-width: 800px) {
+    .topnav .logo h1 {
+        font-size: 56px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .topnav .logo h1 {
+        font-size: 46px;
+    }
+}
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 1500px) {
+    .navbar.responsive {
+        position: relative;
+    }
+    .navbar.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navbar.responsive {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+/* WHITEBUTTON */
+.white-button {
+    background: transparent;
+    color: black;
+    border: 3px solid white; /* Green */
+    border-radius: 12px;
+    padding: 10px 24px;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.white-button:hover {
+    background: white;
+    color: black;
+}
+
+/* REDBUTTON */
+.red-button {
+    background: transparent;
+    color: black;
+    border: 3px solid rgb(196, 0, 0); /* Green */
+    border-radius: 12px;
+    padding: 10px 24px;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.red-button:hover {
+    background: rgb(196, 0, 0);
+    color: white;
+}
+
+#cerrar-sesion-btn {
+    background: azure;
+}
+
+#cerrar-sesion-btn:hover {
+    background: rgb(196, 0, 0);
+    color: white;
+}
+/* BLUEBUTTON */
+.blue-button {
+    background: transparent;
+    color: black;
+    border: 3px solid rgb(41, 104, 187); /* Green */
+    border-radius: 12px;
+    padding: 10px 24px;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.blue-button:hover {
+    background: rgb(41, 104, 187);
+    color: white;
+}
+
+/* VALORACION */
+#assessment .starrating > input {
+    display: none;
+} /* Remove radio buttons */
+#assessment .starrating > label:before {
+    content: "\2605"; /* Star */
+    margin: 2px;
+    font-size: 2em;
+    font-family: FontAwesome;
+    display: inline-block;
+}
+#assessment .starrating > label {
+    color: #222222; /* Start color when not clicked */
+}
+#assessment .starrating > input:checked ~ label {
+    color: #ffca08;
+} /* Set yellow color when star checked */
+#assessment .starrating > input:hover ~ label {
+    color: #ffca08;
+} /* Set yellow color when star hover */
+
+/* EVENTBOX*/
+#event-box .column-img {
+    float: left;
+    padding-right: 50px;
+    width: 33.33%;
+}
+#event-box .column-img img {
+    width: 100%;
+}
+#event-box .column-content {
+    float: left;
+    padding-left: 50px;
+    width: 66%;
+    padding-bottom: 20px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+#event-details {
+    padding-top: 20px;
+}
+.event-options {
+    padding-top: 25px;
+    padding-bottom: 0px;
+    float: right;
+    width: 100%;
+}
+.btn-group {
+    display: table;
+    float: right;
+}
+.two-buttons {
+    margin-left: 20px;
+}
+
+.btn-group::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.button-alone {
+    float: right;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1200px) {
+    #event-box .column-img {
+        width: 100%;
+        padding: 20px;
+    }
+    #event-box .column-content {
+        width: 95%;
+        padding: 20px;
+        padding-top: 40px;
+    }
+    #event-box .btn-group {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        text-align: center;
+        float: none;
+        margin: auto;
+    }
+    .two-buttons {
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 400px) {
+    #event-box .column-content h1 {
+        font-size: 36px;
+    }
+    #event-box .column-content h2 {
+        padding-top: 20px;
+        font-size: 26px;
+    }
+}
+
+/* MY EVENTS */
+#my-events {
+    color: black;
+    background: rgb(200, 219, 167);
+}
+#my-events .section-title {
+    color: black;
+}
+.event-display {
+    margin-right: 10%;
+    margin-left: 10%;
+    border: 5px solid black;
+    border-radius: 12px;
+    background: rgb(249, 255, 239);
+}
+.event-box {
+    padding: 5%;
+    border: 1px solid black;
+}
+
+/* LOGIN */
+#login {
+    height: 100vh;
+    background: rgb(200, 219, 167);
+}
+
+/*inicio de sesión*/
+#login .section-title h1 {
+    color: rgb(41, 41, 41);
+}
+
+/*posicion campos*/
+#login form {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin: 0 auto;
+}
+
+/*tamaño campos de sesión*/
+#login p {
+    font-size: 30px;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* boton*/
+.login-button {
+    background-color: white;
+    color: black;
+    border: 3px solid #4caf50; /* Green */
+    border-radius: 12px;
+    padding: 10px 24px;
+    font-size: 24px;
+    margin: auto;
+    display: block;
+    width: 50%;
+    margin-top: 70px;
+    -webkit-box-shadow: 0px 3px 0px #317031;
+    box-shadow: 0px 3px 0px #317031;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.login-button {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.login-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.login-button span:after {
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.login-button:hover span {
+    padding-right: 25px;
+}
+.login-button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* boton*/
+#login .login-questions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+#login .login-questions a {
+    color: rgb(41, 41, 41);
+    font-size: 20px;
+    margin: 20px;
+
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#login .login-questions a:hover {
+    color: rgb(0, 175, 52);
+}
+#login input {
+    color: white;
+    display: inline;
+    font-size: 40px;
+    margin: 10px;
+    padding: 10px 40px;
+    text-align: center;
+    font-size: 20px;
+    color: black;
+}
+.login-questions {
+    padding-top: 80px;
+}
+.login-questions a {
+    color: black;
+    text-align: center;
+}
+/* ABOUT US */
+#about-us {
+    background: rgb(200, 219, 167);
+}
+.about-section-subtitle {
+    padding-top: 0px;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+.about-section {
+    padding-top: 50px;
+    padding-bottom: 5px;
+    margin: auto;
+    width: 50%;
+}
+#about-us h1 {
+    color: rgb(41, 41, 41);
+}
+#introduction {
+    background-color: #ff0000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.about-section-title {
+    padding-top: 50px;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    font-size: 25px;
+    color: black;
+}
+.about-section-body {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    width: 100%;
+    margin: auto;
+    font-size: 15px;
+    text-align: justify;
+    color: black;
+}
+#introduction form {
+    padding-bottom: 50px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin: 0 auto;
+}
+#introduction h1 {
+    font-size: 25px;
+    text-align: justify;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#introduction h3 {
+    font-size: 25px;
+    text-align: justify;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+@media screen and (max-width: 600px) {
+    .about-section-subtitle h2 {
+        font-size: 24px;
+    }
+    .about-section-title h1 {
+        font-size: 34px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .about-section-subtitle h2 {
+        font-size: 20px;
+    }
+    .about-section-title h1 {
+        font-size: 26px;
+    }
+}
+
+/* TYPE REG */
+#selection-registry-type {
+    background: rgb(200, 219, 167);
+}
+#selection-registry-type .section-title {
+    color: black;
+}
+.selection-body {
+    padding-top: 20px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    color: black;
+}
+#selection-registry-type .description {
+    width: 60%;
+    margin: auto;
+    padding-top: 50px;
+}
+#selection-registry-type .description p {
+    font-size: 20px;
+}
+#clientType-button {
+    margin-top: 100px;
+}
+#selection-registry-type .login-button {
+    width: 300px;
+}
+
+/********REGISTRO********/
+#registry {
+    background: rgb(200, 219, 167);  
+}
+
+#registry .section-title h1 {
+    color: rgb(41, 41, 41);
+}
+
+/*posicion campos*/
+#registry form {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin: 0 auto;
+}
+
+/*campos de sesión-size*/
+#registry p {
+    font-size: 30px;
+    color: rgb(41, 41, 41);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#registry input {
+    color: black;
+    display: inline;
+    font-size: 40px;
+    margin: 10px;
+    padding: 10px 40px;
+    text-align: center;
+    font-size: 20px;
+    color: black;
+}
+
+/* boton*/
+#register-Button {
+    margin-top: 75px;
+    width: 200px;
+}
+.login-button {
+    background-color: white;
+    color: black;
+    border: 3px solid #4caf50;
+    /* Green */
+    border-radius: 12px;
+    padding: 10px 24px;
+    font-size: 24px;
+    margin: auto;
+    display: block;
+    width: 50%;
+    margin-top: 70px;
+    -webkit-box-shadow: 0px 3px 0px #317031;
+    box-shadow: 0px 3px 0px #317031;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.login-button {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.login-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.login-button span:after {
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.login-button:hover span {
+    padding-right: 25px;
+}
+.login-button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* CREATOR */
+#event-creator {
+    background: rgb(200, 219, 167);
+}
+#event-creator h1 {
+    color: rgb(41, 41, 41);
+}
+.creation {
+    margin-top: 0px;
+    position: center;
+    width: 100%;
+    height: 200px;
+}
+.inputCreation {
+    font-size: 32px;
+    margin-right: 60px;
+    margin-left: 60px;
+    margin-bottom: 40px;
+}
+.dateCreation {
+    font-size: 20px;
+    margin-left: 60px;
+    margin-bottom: 40px;
+}
+.labelCreation {
+    font-size: 32px;
+    margin-left: 60px;
+    margin-bottom: 40px;
+}
+#eventLocalization {
+    margin-left: 73px;
+}
+#typeEventLabel {
+    margin-left: 100px;
+}
+#eventDescription {
+    margin-left: 60px;
+    margin-right: 60px;
+    width: 100%;
+    height: 400px;
+}
+#eventForum {
+    font-size: 30px;
+    margin-left: 60px;
+    width: 300px;
+}
+#eventInscriptionDateLabel {
+    margin-left: 340px;
+}
+#eventInscriptionDate {
+    margin-left: 170px;
+}
+#eventImagesLabel {
+    margin-left: 400px;
+}
+#event-creator form {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin: 0 auto;
+}
+#event-creator select {
+    color: black;
+    font-size: 20px;
+}
+#inputEventImages {
+    opacity: 100;
+}
+
+/* BTN GRP */
+.my-btn-group {
+    float: right;
+}
+#event-description .img-col {
+    width: 60%;
+    float: left;
+    padding-right: 50px;
+}
+#event-description .main-information-col {
+    width: 30%;
+    float: left;
+}
+#event-description .address-map {
+    padding-top: 50px;
+}
+#event-description .event-details {
+    padding-top: 50px;
+    width: 90%;
+    font-size: 20px;
+}
+#event-description {
+    background-color: rgb(200, 219, 167);
+    border: 1px solid #1e679a;
+    padding-top: 100px;
+    margin: auto;
+}
+#event-description .event {
+    padding-top: 100px;
+    width: 80%;
+    margin: auto;
+}
+#event-description .btn-group {
+    padding-top: 50px;
+}
+#event-description .my-button:not(:hover) {
+    background: rgb(247, 255, 246);
+    margin: 20px;
+}
+#event-description .my-button:hover {
+    margin: 20px;
+}
+@media screen and (max-width: 1200px) {
+    #event-description .img-col {
+        width: 100%;
+        padding: 20px;
+    }
+    #event-description .main-information-col {
+        width: 95%;
+        padding: 20px;
+        padding-top: 40px;
+    }
+}
+
+/* APP */
+#app * {
+    list-style: none;
+    text-decoration: none;
+}
+.unique-section {
+    background: rgb(200, 219, 167);
+    padding-top: 200px;
+    padding-bottom: 100px;
+    min-height: 100vh;
+}
+.first-section {
+    padding-top: 200px;
+    padding-bottom: 50px;
+}
+.section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.section-title {
+    padding-bottom: 100px;
+    width: 90%;
+    text-align: center;
+    margin: auto;
+}
+.section-title h1 {
+    font-size: 64px;
+}
