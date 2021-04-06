@@ -2,7 +2,8 @@
 
 function recuperarNombre(latitud, longitud, indice) {
 
-    var locAPI = "https://maps.googleapis.com/maps/api/geocode/json?latlng=" + latitud + "," + longitud + "&key=AIzaSyCaK9SxD4STVKbJ6rBwlkRWt_Xk3H8CIpo";
+    const apiKey = ""
+    var locAPI = "https://maps.googleapis.com/maps/api/geocode/json?latlng=" + latitud + "," + longitud + "&key=" + apiKey;
     $.get({
         url: locAPI,
         success: function (data) {
